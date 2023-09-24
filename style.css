@@ -1,0 +1,17 @@
+
+img{
+    max-width: 190px;
+}
+
+
+.card h2{
+    font-size: 25px;
+    /* border: 1px solid; */
+    font-weight: 700;
+}
+.card h4{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}

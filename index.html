@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header >
+        <div class="w-11/12 mx-auto my-12 bg-cyan-200 rounded-lg flex justify-between px-12 max-h-32">
+            <h1 class="py-4 text-5xl font-bold">Inveractinve <span class="text-3xl font-normal block">Geometry Genious</span> </h1>
+            <a href="blog.html">
+                <button class="bg-cyan-500 my-10 px-9 py-3 font-semibold text-white shadow-sm hover:bg-indigo-500 rounded-md">Blog</button>
+            </a>
+            
+        </div>
+    </header>
+    <main class="w-11/12  mx-auto flex flex-row gap-5">
+
+        <section class="w-9/12">
+            <div class="cards grid lg:grid-cols-3 md:grid-cols-2 gap-5 items-stretch">
+                <!-- Cards Start from here -->
+                <div class="card border flex flex-col">
+                    <div class="img flex justify-center my-7">
+                        <img src="images/triangle.png" alt="">
+                    </div>
+                    <div class="">
+                        <div class="content text-center">
+                            <h2>Triangle</h2>
+                            <h4>Area (A) = 0.5 × b × h</h4>
+                        </div>
+                        <div class="input flex  text-center justify-center gap-5">
+                            <div class="w-1/3 input-a">
+                                <input id="input-a-triangle" oninvalid="alert('You must fill out the form with valid numbers!')" type="text" name="a" placeholder="b" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                                <label for="a">cm</label>
+                            </div>
+                            <div class="w-1/3 input-b">
+                                <input id="input-b-triangle" type="text" name="a" placeholder="h" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                                <label for="a">cm</label>
+                            </div>
+                        </div>
+                        <button id="triangle" class="bg-cyan-500 block mx-auto my-3 py-2 px-5 rounded-md font-medium text-white" type="submit">Calculate</button>
+                    </div>
+                </div>
+
+
+                <div class="card border">
+                    <div class="img flex justify-center my-7">
+                        <img src="images/rectangle.png" alt="">
+                    </div>
+                    <div class="content-section flex flex-col">
+                        <div class="content text-center">
+                            <h2>Rectangle</h2>
+                            <h4>Area (A) = w × I</h4>
+                        </div>
+                        <div class="input flex  text-center justify-center gap-5">
+                            <div class="w-1/3 input-a">
+                                <input id="input-a-rectangle" type="text" name="a" placeholder="w" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                                <label for="a">cm</label>
+                            </div>
+                            <div class="w-1/3 input-b">
+                                <input id="input-b-rectangle" type="text" name="a" placeholder="l" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                                <label for="a">cm</label>
+                            </div>
+                        </div>
+                            <button id="rectangle" class="bg-cyan-500 block mx-auto my-3 py-2 px-5 rounded-md font-medium text-white" type="submit" >Calculate</button>
+                    </div>
+                </div>
+
+                
+                <div class="card border">
+                    <div class="img flex justify-center my-7">
+                        <img src="images/triangle.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <h2>Parallelogram</h2>
+                        <h4>Area (A) = b × h</h4>
+                    </div>
+                    <div class="input flex  text-center justify-center gap-5">
+                        <div class="w-1/3 input-a">
+                            <input  id="input-a-parallelogram" type="text" name="a" placeholder="b" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                            <label for="a">cm</label>
+                        </div>
+                        <div class="w-1/3 input-b">
+                            <input id="input-b-parallelogram" type="text" name="a" placeholder="h" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                            <label for="a">cm</label>
+                        </div>
+                    </div>
+                        <button id="parallelogram" class="bg-cyan-500 block mx-auto my-3 py-2 px-5 rounded-md font-medium text-white" type="submit" >Calculate</button>
+                </div>
+                <div class="card border">
+                    <div class="img flex justify-center my-7">
+                        <img src="images/rhombus.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <h2>Rhombus</h2>
+                        <h4>Area (A) = 0.5 × d₁ × d₂</h4>
+                    </div>
+                    <div class="input flex  text-center justify-center gap-5">
+                        <div class="w-1/3 input-a">
+                            <input id="input-a-rhombus" type="text" name="a" placeholder="d₁" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                            <label for="a">cm</label>
+                        </div>
+                        <div class="w-1/3 input-b-">
+                            <input id="input-b-rhombus" type="text" name="a" placeholder="d₂" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                            <label for="a">cm</label>
+                        </div>
+                    </div>
+                        <button id="rhombus" class="bg-cyan-500 block mx-auto my-3 py-2 px-5 rounded-md font-medium text-white" type="submit" >Calculate</button>
+                </div>
+                <div class="card border">
+                    <div class="img flex justify-center my-7">
+                        <img src="images/pentagon.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <h2>Pentagon</h2>
+                        <h4>Area (A) = 0.5 × p × b</h4>
+                    </div>
+                    <div class="input flex  text-center justify-center gap-5">
+                        <div class="w-1/3 input-a">
+                            <input id="input-a-pentagon" type="text" name="a" placeholder="p" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                            <label for="a">cm</label>
+                        </div>
+                        <div class="w-1/3 input-b">
+                            <input id="input-b-pentagon" type="text" name="a" placeholder="b" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                            <label for="a">cm</label>
+                        </div>
+                    </div>
+                        <button id="pentagon" class="bg-cyan-500 block mx-auto my-3 py-2 px-5 rounded-md font-medium text-white" type="submit" >Calculate</button>
+                </div>
+                
+                <div class="card border">
+                    <div class="img flex justify-center my-7">
+                        <img src="images/ellipse.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <h2>Ellipse</h2>
+                        <h4>Area (A) = πab</h4>
+                    </div>
+                    <div class="input flex  text-center justify-center gap-5">
+                        <div class="w-1/3 input-a">
+                            <input id="input-a-ellipse" type="text" name="a" placeholder="a" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                            <label for="a">cm</label>
+                        </div>
+                        <div class="w-1/3 input-b">
+                            <input id="input-b-ellipse" type="text" name="a" placeholder="b" class="w-2/3 px-3 my-2 py-1 border-y-sky-300 rounded-md">
+                            <label for="a">cm</label>
+                        </div>
+                    </div>
+                        <button id="ellipse" class="bg-cyan-500 block mx-auto my-3 py-2 px-5 rounded-md font-medium text-white" type="submit" >Calculate</button>
+                </div>
+            </div>
+        </section>
+        <aside class="w-3/12">
+            <div class="grid grid-cols-1 w-11/12 mx-auto border">
+                <h1 class="text-center py-4 font-semibold text-lg">Area Calculation</h1>
+                <div class="px-3 py-1 flex flex-row justify-between items-center ">
+                    <h4>1. Triangle <span id="triangle-result">00</span>cm²</h4>
+                    <button class="bg-cyan-500 block mx-auto my-2 py-1 px-3 rounded-md text-white ">Convert to m²</button>
+                </div>
+                <div class="px-3 py-1 flex flex-row justify-around items-center	">
+                    <h4>2. Rectangle <span id="rectangle-result">00</span>cm²</h4>
+                    <button class="bg-cyan-500 block mx-auto my-2 py-1 px-3 rounded-md text-white">Convert to m²</button>
+                </div>
+                <div class="px-3 py-1 flex flex-row justify-around items-center	">
+                    <h4>3. Parallelogram <span id="parallelogram-result">00</span>cm²</h4>
+                    <button class="bg-cyan-500 block mx-auto my-2 py-1 px-3 rounded-md text-white">Convert to m²</button>
+                </div>
+                <div class="px-3 py-1 flex flex-row justify-around items-center	">
+                    <h4>4. Rhombus <span id="rhombus-result">00</span>cm²</h4>
+                    <button class="bg-cyan-500 block mx-auto my-2 py-1 px-3 rounded-md text-white">Convert to m²</button>
+                </div>
+                <div class="px-3 py-1 flex flex-row justify-around items-center	">
+                    <h4>5. Pentagon <span id="pentagon-result">00</span>cm²</h4>
+                    <button class="bg-cyan-500 block mx-auto my-2 py-1 px-3 rounded-md text-white">Convert to m²</button>
+                </div>
+                <div class="px-3 py-1 flex flex-row justify-around items-center	">
+                    <h4>6. Ellipse <span id="ellipse-result">00</span>cm²</h4>
+                    <button class="bg-cyan-500 block mx-auto my-2 py-1 px-3 rounded-md text-white">Convert to m²</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <script src="JS/calculate.js"></script>
+</body>
+</html>

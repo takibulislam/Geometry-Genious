@@ -1,3 +1,0 @@
-# geometry-genius-resources
-
-

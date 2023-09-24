@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body>
+    <main>
+        <section class="blogs w-9/12 mx-auto my-11">
+            <h1 class="text-center text-5xl font-semibold py-6 bg-cyan-400 rounded-md text-white">Blogs</h1>
+            <article class="blog blog1 pt-5">
+                <h3 class="py-2 font-semibold text-lg bg-cyan-200 rounded px-5">What is DOM? and What is the purpose of DOM?</h3>
+                <p class="py-2 font-normal bg-cyan-100 rounded px-5">Document Object Model in short (DOM) is cencept that helps programming languages to interact with the html/ webpages, it represent the page as node and object so the programing languages can make changes, modify the style and contents</p>
+            </article>
+            <article class="blog blog2 pt-5">
+                <h3 class="py-2 font-semibold text-lg bg-cyan-200 rounded px-5">How we can select element from DOM?</h3>
+                <p class="py-2 font-normal bg-cyan-100 rounded px-5">We can select element from DOM using these methods,
+                    <ul class="bg-cyan-100 px-5 py-2">
+                        <li>getElementByTagName</li>
+                        <li>getElementById</li>
+                        <li>getElementByClassName</li>
+                        <li>getElementsByName</li>
+                        <li>querySelector</li>
+                        <li>querySlectorAll</li>
+                    </ul>
+                </p>
+            </article>
+            <article class="blog blog3 pt-5">
+                <h3 class="py-2 font-semibold text-lg bg-cyan-200 rounded px-5">What is event bubble?</h3>
+                <p class="py-2 font-normal bg-cyan-100 rounded px-5">
+                    Event Bubbling is a concept in the DOM. It happens when an element receives an event, 
+                    and that event bubbles up (propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.
+                    <br>
+                    we can access multiple events jusing event bubble, we we have to add event listener to the parent / anchestors and set target to those childs.
+                </p>
+                
+            </article>
+            <article class="blog blog4 pt-5">
+                <h3 class="py-2 font-semibold text-lg bg-cyan-200 rounded px-5">
+                    What is callback function ?
+                </h3>
+                <p class="py-2 font-normal bg-cyan-100 rounded px-5">
+                    When a funciton is used as a parameter or argument into another function is called <span class="font-semibold">callback function</span> <br>
+                    callback funtion make the main funtion more controll over common functions.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
